@@ -1,3 +1,65 @@
+/* HOME PAGE SKELETON */
+
+.home-hero {
+  min-height: 90vh;
+  display: grid;
+  align-content: end;
+  padding: 6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.home-hero h1 {
+  max-width: 1000px;
+  font-size: clamp(4rem, 13vw, 12rem);
+  line-height: 0.9;
+}
+
+.full-band {
+  padding: 6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  min-height: 80vh;
+  border-bottom: 1px solid #ddd;
+}
+
+.split-aside {
+  padding: 5rem;
+  border-right: 1px solid #ddd;
+}
+
+.split-content {
+  padding: 5rem;
+  display: grid;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .home-hero,
+  .full-band,
+  .split-aside,
+  .split-content {
+    padding: 2rem;
+  }
+
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .split-aside {
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+
+
+/* SECONDARY PAGE SKELETON  */
+
 .hero {
   min-height: 85vh;
   display: grid;
