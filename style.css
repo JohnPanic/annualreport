@@ -73,14 +73,14 @@ h3 {
   color: var(--ink);
   background: var(--orange);
   font: inherit;
-  font-size: clamp(1.25rem, 3vw, 3rem);
+  font-size: 1.125rem;
   font-weight: 800;
   cursor: pointer;
 }
 
 .toggle-mark {
   width: 1ch;
-  font-size: 1.35em;
+  font-size: 1.7rem;
   line-height: 1;
 }
 
@@ -93,13 +93,16 @@ h3 {
   padding: clamp(1.5rem, 4vw, 3rem);
   background: var(--orange);
   transform: translateY(-100%);
+  opacity: 0;
   visibility: hidden;
-  transition: transform 260ms ease, visibility 260ms ease;
+  transition: transform 220ms ease, opacity 160ms ease, visibility 0s linear 220ms;
 }
 
 body.menu-open .report-menu {
   transform: translateY(0);
+  opacity: 1;
   visibility: visible;
+  transition: transform 220ms ease, opacity 160ms ease;
 }
 
 .report-menu-top {
@@ -110,7 +113,7 @@ body.menu-open .report-menu {
 }
 
 .report-menu-top h2 {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: 1.125rem;
   line-height: 1;
 }
 
@@ -119,7 +122,7 @@ body.menu-open .report-menu {
   background: transparent;
   color: var(--ink);
   font: inherit;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 1.7rem;
   font-weight: 800;
   line-height: 0.8;
   cursor: pointer;
@@ -139,10 +142,10 @@ body.menu-open .report-menu {
   border-top: 4px solid var(--line);
   padding: clamp(1rem, 2vw, 2rem) 2rem 1rem 0;
   text-decoration: none;
-  font-size: clamp(4rem, 12vw, 11rem);
+  font-size: 1.125rem;
   font-weight: 900;
-  line-height: 0.86;
-  letter-spacing: -0.08em;
+  line-height: 1.1;
+  letter-spacing: 0;
 }
 
 .chapter-menu a:last-child {
@@ -151,13 +154,13 @@ body.menu-open .report-menu {
 
 .chapter-menu span {
   min-width: 3ch;
-  font-size: clamp(1.25rem, 3vw, 3rem);
+  font-size: 1.125rem;
   letter-spacing: 0;
 }
 
 .report-menu-foot {
   margin: 2rem 0 0;
-  font-size: clamp(1rem, 2vw, 1.7rem);
+  font-size: 1.125rem;
   font-weight: 800;
   text-transform: uppercase;
 }
