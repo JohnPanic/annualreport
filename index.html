@@ -1,57 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title - Leadership</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BBYO FY2025 Annual Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="BBYO FY2025 home">BBYO 25</a>
+    <button class="report-toggle" type="button" aria-expanded="false" aria-controls="report-menu">
+      <span>Read the Report</span>
+      <span class="toggle-mark" aria-hidden="true">+</span>
+    </button>
+  </header>
 
-<header class="site-header"></header>
+  <div class="report-menu" id="report-menu" aria-hidden="true">
+    <div class="report-menu-top">
+      <h2>Report Chapters</h2>
+      <button class="report-close" type="button" aria-label="Close report menu">x</button>
+    </div>
 
-<main>
-  <section class="home-hero">
-  <p class="eyebrow">BBYO Annual Report 2024-2025</p>
-  <h1>A Movement in Motion</h1>
-  <p>Teen leadership, Jewish pride, global connection, and community impact.</p>
-</section>
+    <nav class="chapter-menu" aria-label="Report chapters">
+      <a href="index.html#numbers"><span>01</span>Year in Numbers</a>
+      <a href="leadership.html"><span>02</span>Leadership</a>
+      <a href="index.html#ic"><span>03</span>International Convention</a>
+      <a href="index.html#global"><span>04</span>Global Reach</a>
+      <a href="index.html#stories"><span>05</span>Impact Stories</a>
+    </nav>
 
-<section class="full-band">
-  <div class="band-heading">
-    <p class="eyebrow">Year in Numbers</p>
-    <h2>One year of global teen impact.</h2>
+    <p class="report-menu-foot">BBYO Annual Report 2024-2025</p>
   </div>
 
-  <div class="stats-grid">
-    <!-- stat cards -->
-  </div>
-</section>
+  <main>
+    <section class="home-hero">
+      <p class="eyebrow">BBYO Annual Report 2024-2025</p>
+      <h1>A Movement in Motion</h1>
+      <p>Teen leadership, Jewish pride, global connection, and community impact.</p>
+    </section>
 
- <section class="split-section">
-  <aside class="split-aside">
-    <p class="section-number">01</p>
-    <h2>Leadership</h2>
-  </aside>
+    <section class="full-band" id="numbers">
+      <div class="band-heading">
+        <p class="eyebrow">Year in Numbers</p>
+        <h2>One year of global teen impact.</h2>
+      </div>
 
-  <div class="split-content">
-    <h3>Teen leaders are shaping Jewish life around the world.</h3>
-    <p>BBYO gives teens the tools, trust, and community to lead locally, regionally, and globally.</p>
-    <a href="leadership.html">Read the section</a>
-  </div>
-</section>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <strong>$1.47M</strong>
+          <span>Scholarship dollars awarded</span>
+        </article>
+        <article class="stat-card">
+          <strong>100,000+</strong>
+          <span>Volunteer service hours</span>
+        </article>
+        <article class="stat-card">
+          <strong>6,502</strong>
+          <span>Teens attended 85+ conventions</span>
+        </article>
+        <article class="stat-card">
+          <strong>5,518</strong>
+          <span>New North America members</span>
+        </article>
+      </div>
+    </section>
 
+    <section class="split-section">
+      <aside class="split-aside">
+        <p class="section-number">01</p>
+        <h2>Leadership</h2>
+      </aside>
 
-  <section class="split-section" id="ic"></section>
-  <section class="split-section" id="global"></section>
+      <div class="split-content">
+        <h3>Teen leaders are shaping Jewish life around the world.</h3>
+        <p>BBYO gives teens the tools, trust, and community to lead locally, regionally, and globally.</p>
+        <a href="leadership.html">Read the section</a>
+      </div>
+    </section>
 
-  <section class="full-band" id="stories"></section>
-</main>
+    <section class="split-section" id="ic">
+      <aside class="split-aside">
+        <p class="section-number">02</p>
+        <h2>International Convention</h2>
+      </aside>
 
-<footer class="site-footer"></footer>
+      <div class="split-content">
+        <h3>The summit of the year brought a global teen movement together.</h3>
+        <p>IC 2025 gathered teens, educators, alumni, partners, and guests for a week of leadership, celebration, learning, and Jewish pride.</p>
+      </div>
+    </section>
 
+    <section class="split-section" id="global">
+      <aside class="split-aside">
+        <p class="section-number">03</p>
+        <h2>Global Reach</h2>
+      </aside>
+
+      <div class="split-content">
+        <h3>Jewish teens are building connection across countries and communities.</h3>
+        <p>From local chapters to global gatherings, BBYO's international network helps teens learn from one another and lead with purpose.</p>
+      </div>
+    </section>
+
+    <section class="full-band" id="stories">
+      <div class="band-heading">
+        <p class="eyebrow">Impact Stories</p>
+        <h2>Human stories give the numbers their weight.</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>BBYO Annual Report 2024-2025</p>
+    <a href="leadership.html">Next: Leadership</a>
+  </footer>
 </body>
-
-
 </html>

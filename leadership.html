@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title - Leadership</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leadership - BBYO FY2025 Annual Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">BBYO FY2025</a>
-    <nav>
-      <a href="leadership.html">Leadership</a>
-      <a href="impact.html">Impact</a>
-      <a href="global.html">Global</a>
-    </nav>
+    <a class="site-logo" href="index.html" aria-label="BBYO FY2025 home">BBYO 25</a>
+    <button class="report-toggle" type="button" aria-expanded="false" aria-controls="report-menu">
+      <span>Read the Report</span>
+      <span class="toggle-mark" aria-hidden="true">+</span>
+    </button>
   </header>
+
+  <div class="report-menu" id="report-menu" aria-hidden="true">
+    <div class="report-menu-top">
+      <h2>Report Chapters</h2>
+      <button class="report-close" type="button" aria-label="Close report menu">x</button>
+    </div>
+
+    <nav class="chapter-menu" aria-label="Report chapters">
+      <a href="index.html#numbers"><span>01</span>Year in Numbers</a>
+      <a href="leadership.html"><span>02</span>Leadership</a>
+      <a href="index.html#ic"><span>03</span>International Convention</a>
+      <a href="index.html#global"><span>04</span>Global Reach</a>
+      <a href="index.html#stories"><span>05</span>Impact Stories</a>
+    </nav>
+
+    <p class="report-menu-foot">BBYO Annual Report 2024-2025</p>
+  </div>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Chapter 01</p>
+      <p class="eyebrow">Chapter 02</p>
       <h1>Leadership</h1>
       <p>
         Teen leaders are building Jewish community locally, regionally,
@@ -29,7 +46,7 @@
 
     <section class="chapter-section">
       <aside class="chapter-aside">
-        <p class="section-number">01</p>
+        <p class="section-number">02</p>
         <h2>Leadership starts with trust.</h2>
       </aside>
 
@@ -55,10 +72,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>BBYO Annual Report 2024–2025</p>
-    <a href="impact.html">Next: Impact</a>
+    <p>BBYO Annual Report 2024-2025</p>
+    <a href="index.html#ic">Next: International Convention</a>
   </footer>
 </body>
-
-
 </html>
