@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+.hero {
+  min-height: 85vh;
+  display: grid;
+  align-content: end;
+  padding: 6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-size: clamp(4rem, 12vw, 11rem);
+  line-height: 0.9;
+}
+
+.hero p {
+  max-width: 680px;
+  font-size: 1.25rem;
+}
+
+.chapter-section {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  min-height: 100vh;
+  border-bottom: 1px solid #ddd;
+}
+
+.chapter-aside {
+  padding: 5rem;
+  border-right: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  min-height: 100vh;
+}
+
+.chapter-content {
+  padding: 5rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.chapter-aside h2 {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  line-height: 0.95;
+}
+
+.chapter-content p {
+  font-size: 1.3rem;
+  line-height: 1.55;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.stat-card {
+  padding: 2rem;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1;
+}
+
+.site-footer {
+  min-height: 60vh;
+  padding: 5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background: #111;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 2rem;
+    min-height: 75vh;
+  }
+
+  .chapter-section {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-aside {
+    position: static;
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 2rem;
+  }
+
+  .chapter-content {
+    padding: 2rem;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+  }
+}
+</style>
+
+
+
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">BBYO FY2025</a>
+    <nav>
+      <a href="leadership.html">Leadership</a>
+      <a href="impact.html">Impact</a>
+      <a href="global.html">Global</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Chapter 01</p>
+      <h1>Leadership</h1>
+      <p>
+        Teen leaders are building Jewish community locally, regionally,
+        and globally.
+      </p>
+    </section>
+
+    <section class="chapter-section">
+      <aside class="chapter-aside">
+        <p class="section-number">01</p>
+        <h2>Leadership starts with trust.</h2>
+      </aside>
+
+      <div class="chapter-content">
+        <p>
+          BBYO gives teens meaningful responsibility and the support to turn
+          ideas into programs, communities, and movements.
+        </p>
+
+        <div class="stat-grid">
+          <article class="stat-card">
+            <strong>1,350</strong>
+            <span>Teens in the International Leadership Network</span>
+          </article>
+
+          <article class="stat-card">
+            <strong>46</strong>
+            <span>Countries represented at IC 2025</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>BBYO Annual Report 2024–2025</p>
+    <a href="impact.html">Next: Impact</a>
+  </footer>
+</body>
+
+
+</html>
