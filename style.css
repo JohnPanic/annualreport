@@ -455,6 +455,77 @@ body.menu-open .report-menu {
   letter-spacing: -0.06em;
 }
 
+.people-section {
+  display: grid;
+  grid-template-columns: 28% 72%;
+  border-bottom: 1px solid var(--line);
+  background: #eef2f4;
+}
+
+.people-aside {
+  min-height: auto;
+  padding: 5rem 3rem;
+  border-right: 1px solid var(--line);
+  background: #eef2f4;
+}
+
+.people-aside h2 {
+  max-width: 100%;
+  white-space: nowrap;
+  font-size: clamp(2.5rem, 4.5vw, 4.75rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.people-card {
+  display: grid;
+  align-content: start;
+  min-height: 420px;
+  padding: clamp(2rem, 4vw, 4rem);
+  border: 0;
+  background: #eef2f4;
+}
+
+.people-note {
+  max-width: 34ch;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.people-card img {
+  width: clamp(96px, 12vw, 150px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 22%;
+  margin-top: 1.5rem;
+}
+
+.people-card h3 {
+  margin: 1.5rem 0 0.6rem;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.people-role {
+  margin: 0;
+  color: #686868;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
 .split-content,
 .chapter-content {
   padding: 5rem;
@@ -631,12 +702,14 @@ body.menu-open .report-menu {
   .split-section,
   .chapter-section,
   .letter-article,
+  .people-section,
   .letter-section {
     grid-template-columns: 1fr;
   }
 
   .split-aside,
   .chapter-aside,
+  .people-aside,
   .article-aside,
   .letter-aside {
     position: static;
@@ -682,6 +755,15 @@ body.menu-open .report-menu {
 
   .letter-signers {
     grid-template-columns: 1fr;
+  }
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .people-card,
+  .people-card:nth-child(even) {
+    min-height: 420px;
   }
 
   .stats-grid,
