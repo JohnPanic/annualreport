@@ -448,9 +448,11 @@ body.menu-open .report-menu {
 
 .split-aside h2,
 .chapter-aside h2 {
-  font-size: clamp(3.5rem, 8vw, 9rem);
-  line-height: 0.86;
-  letter-spacing: -0.08em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(2.75rem, 6vw, 6.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
 }
 
 .split-content,
