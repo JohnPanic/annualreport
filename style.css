@@ -267,23 +267,43 @@ body.menu-open .report-menu {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
   margin-top: 2rem;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  padding: 1.25rem;
+  background: #eef2f4;
 }
 
-.letter-signers p {
+.signer-card {
   display: grid;
-  gap: 0.35rem;
+  justify-items: start;
+  gap: 0.55rem;
   margin: 0;
-  padding: 1rem;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  font-size: 1rem;
-  line-height: 1.2;
+  padding: 1.25rem;
+  background: transparent;
 }
 
-.letter-signers span {
-  font-size: 0.9rem;
+.signer-card img {
+  width: 88px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.signer-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.signer-card p {
+  margin: 0;
+  color: #686868;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .full-band {
