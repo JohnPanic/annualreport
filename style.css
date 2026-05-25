@@ -175,6 +175,21 @@ body.menu-open .report-menu {
   text-transform: uppercase;
 }
 
+.video-hero {
+  height: calc(100vh - 96px);
+  min-height: 520px;
+  overflow: hidden;
+  border-bottom: 4px solid var(--line);
+  background: var(--ink);
+}
+
+.video-hero video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .home-hero,
 .hero {
   min-height: calc(92vh - 96px);
@@ -343,6 +358,11 @@ body.menu-open .report-menu {
   .home-hero,
   .hero {
     min-height: calc(82vh - 76px);
+  }
+
+  .video-hero {
+    height: calc(78vh - 76px);
+    min-height: 360px;
   }
 
   .split-section,
