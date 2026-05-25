@@ -42,7 +42,7 @@ h3 {
   z-index: 20;
   display: grid;
   grid-template-columns: minmax(360px, 30%) 1fr;
-  min-height: 72px;
+  min-height: 60px;
   border-bottom: 4px solid var(--line);
 }
 
@@ -50,7 +50,7 @@ h3 {
 .report-toggle {
   display: flex;
   align-items: center;
-  min-height: 72px;
+  min-height: 60px;
   border: 0;
   color: #fff;
   text-decoration: none;
@@ -59,7 +59,7 @@ h3 {
 .site-logo {
   padding: 0 1.5rem;
   background: var(--ink);
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: clamp(1.75rem, 4vw, 3.75rem);
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -0.08em;
@@ -177,8 +177,8 @@ body.menu-open .report-menu {
 
 .video-hero {
   aspect-ratio: 3.53808 / 1;
-  height: clamp(407px, 30vw, 450px);
-  min-height: 407px;
+  height: 425px;
+  min-height: 425px;
   overflow: hidden;
   border-bottom: 4px solid var(--line);
   background: var(--ink);
@@ -193,7 +193,7 @@ body.menu-open .report-menu {
 
 .home-hero,
 .hero {
-  min-height: calc(92vh - 72px);
+  min-height: calc(92vh - 60px);
   display: grid;
   align-content: end;
   padding: 6rem;
@@ -246,9 +246,9 @@ body.menu-open .report-menu {
 
 .chapter-aside {
   position: sticky;
-  top: 72px;
+  top: 60px;
   align-self: start;
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 60px);
 }
 
 .split-aside h2,
