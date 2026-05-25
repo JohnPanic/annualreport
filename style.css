@@ -176,8 +176,9 @@ body.menu-open .report-menu {
 }
 
 .video-hero {
-  height: calc(100vh - 96px);
-  min-height: 520px;
+  aspect-ratio: 3.53808 / 1;
+  height: clamp(407px, 30vw, 600px);
+  min-height: 407px;
   overflow: hidden;
   border-bottom: 4px solid var(--line);
   background: var(--ink);
@@ -361,8 +362,9 @@ body.menu-open .report-menu {
   }
 
   .video-hero {
-    height: calc(78vh - 76px);
-    min-height: 360px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 260px;
   }
 
   .split-section,
