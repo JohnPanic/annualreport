@@ -268,11 +268,29 @@ body.menu-open .report-menu {
   font-size: clamp(1.1rem, 1.5vw, 1.5rem);
 }
 
+.block-label {
+  margin: 1.25rem 0 4px;
+  color: #686868;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.letter-content .block-label,
+.article-content .block-label {
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
 .letter-signers {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 1.25rem;
   background: #eef2f4;
 }
@@ -699,8 +717,13 @@ body.menu-open .report-menu {
   font-weight: 800;
 }
 
+.article-closing {
+  margin-bottom: 3.5rem;
+  line-height: 2.45;
+}
+
 .article-signers {
-  margin-top: 3rem;
+  margin-top: 0;
 }
 
 .stats-grid,
