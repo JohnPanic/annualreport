@@ -178,9 +178,9 @@ body.menu-open .report-menu {
 }
 
 .video-hero {
-  aspect-ratio: 3.53808 / 1;
-  height: 425px;
-  min-height: 425px;
+  width: 100%;
+  height: 230px;
+  min-height: 230px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: var(--ink);
@@ -201,6 +201,10 @@ body.menu-open .report-menu {
   padding: 6rem;
   border-bottom: 1px solid var(--line);
   background: var(--paper);
+}
+
+.home-hero {
+  padding-top: 20px;
 }
 
 .home-hero h1,
@@ -779,7 +783,7 @@ body.menu-open .report-menu {
   .video-hero {
     aspect-ratio: 16 / 9;
     height: auto;
-    min-height: 260px;
+    min-height: 180px;
   }
 
   .split-section,
