@@ -139,20 +139,44 @@ body.menu-open .report-menu {
 
 .chapter-menu a {
   position: relative;
+  z-index: 0;
   display: flex;
   align-items: baseline;
   gap: clamp(1rem, 3vw, 3rem);
   border-top: 1px solid var(--line);
   padding: clamp(1rem, 2vw, 2rem) 2rem 1rem 0;
+  overflow: hidden;
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0;
+  transition: color 180ms ease;
 }
 
 .chapter-menu a:last-child {
   border-bottom: 1px solid var(--line);
+}
+
+.chapter-menu a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 220ms ease;
+}
+
+.chapter-menu a:hover,
+.chapter-menu a:focus-visible {
+  color: #fff;
+}
+
+.chapter-menu a:hover::before,
+.chapter-menu a:focus-visible::before {
+  transform: scaleX(1);
 }
 
 .chapter-menu span {
