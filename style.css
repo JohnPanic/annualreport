@@ -46,6 +46,7 @@ h3 {
   grid-template-columns: minmax(360px, 30%) 1fr;
   min-height: 60px;
   border-bottom: 1px solid var(--line);
+  transition: transform 180ms ease;
 }
 
 .site-logo,
@@ -791,9 +792,24 @@ body.menu-open .report-menu {
 }
 
 @media (max-width: 800px) {
+  body {
+    padding-top: 76px;
+  }
+
   .site-header {
+    position: fixed;
+    right: 0;
+    left: 0;
     grid-template-columns: 42% 58%;
     min-height: 76px;
+  }
+
+  .site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+
+  body.menu-open .site-header {
+    transform: translateY(0);
   }
 
   .site-logo,
