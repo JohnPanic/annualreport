@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chart Showcase - EXHB.01</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="EXHB.01 home">EXHB.01</a>
+    <button class="report-toggle" type="button" aria-expanded="false" aria-controls="report-menu">
+      <span>Read the Report</span>
+      <span class="toggle-mark" aria-hidden="true">+</span>
+    </button>
+  </header>
+
+  <div class="report-menu" id="report-menu" aria-hidden="true">
+    <div class="report-menu-top">
+      <h2>Report Chapters</h2>
+      <button class="report-close" type="button" aria-label="Close report menu">x</button>
+    </div>
+
+    <nav class="chapter-menu" aria-label="Report chapters">
+      <a href="letter.html"><span>01</span>Letter from the Showcase</a>
+      <a href="index.html#numbers"><span>02</span>Year in Numbers</a>
+      <a href="leadership.html"><span>03</span>Leadership</a>
+      <a href="index.html#programs"><span>04</span>Programs</a>
+      <a href="index.html#global"><span>05</span>Reach</a>
+      <a href="index.html#stories"><span>06</span>Impact Stories</a>
+    </nav>
+
+    <p class="report-menu-foot">EXHB.01 Annual Report Showcase</p>
+  </div>
+
+  <main>
+    <section class="article-hero chart-hero">
+      <p class="eyebrow">Chart Showcase</p>
+      <h1>Data modules with editorial rhythm.</h1>
+    </section>
+
+    <article class="chart-article">
+      <aside class="article-aside chart-aside">
+        <p class="eyebrow">Unlinked Prototype</p>
+        <h2>World Cup sample data</h2>
+        <p>
+          A sandbox for testing SVG-driven graph treatments before they become part
+          of the main experience.
+        </p>
+      </aside>
+
+      <div class="article-content chart-content">
+        <section class="chart-module chart-module-intro">
+          <p class="block-label">Chart System 01</p>
+          <h2>All-time team performance</h2>
+          <p>
+            The sample set compares top teams by matches played, wins, goals scored,
+            goals conceded, and goal differential. The goal is not just to show the
+            table, but to give the numbers a visual hierarchy.
+          </p>
+        </section>
+
+        <section class="chart-module chart-animate">
+          <div class="chart-copy">
+            <p class="block-label">Horizontal Bar Chart</p>
+            <h3>Wins by national team</h3>
+            <p>Brazil leads the sample, with Germany close behind and a clear drop to Argentina, Italy, and France.</p>
+          </div>
+
+          <svg class="svg-chart bar-chart" viewBox="0 0 760 360" role="img" aria-labelledby="wins-title wins-desc">
+            <title id="wins-title">World Cup wins by team</title>
+            <desc id="wins-desc">Brazil 76, Germany 68, Argentina 47, Italy 45, France 39.</desc>
+            <line x1="210" y1="32" x2="210" y2="318" class="chart-axis"></line>
+            <g class="bar-row">
+              <text x="0" y="60">Brazil</text>
+              <rect x="210" y="34" width="500" height="44"></rect>
+              <text x="730" y="64">76</text>
+            </g>
+            <g class="bar-row">
+              <text x="0" y="116">Germany</text>
+              <rect x="210" y="90" width="447" height="44"></rect>
+              <text x="677" y="120">68</text>
+            </g>
+            <g class="bar-row">
+              <text x="0" y="172">Argentina</text>
+              <rect x="210" y="146" width="309" height="44"></rect>
+              <text x="539" y="176">47</text>
+            </g>
+            <g class="bar-row">
+              <text x="0" y="228">Italy</text>
+              <rect x="210" y="202" width="296" height="44"></rect>
+              <text x="526" y="232">45</text>
+            </g>
+            <g class="bar-row">
+              <text x="0" y="284">France</text>
+              <rect x="210" y="258" width="257" height="44"></rect>
+              <text x="487" y="288">39</text>
+            </g>
+          </svg>
+        </section>
+
+        <section class="chart-module chart-module-dark">
+          <div class="chart-copy">
+            <p class="block-label">Lollipop Chart</p>
+            <h3>Goal differential separates the field</h3>
+            <p>Three teams sit at +51 in this sample, while Brazil and Germany create the upper tier.</p>
+          </div>
+
+          <svg class="svg-chart lollipop-chart" viewBox="0 0 760 360" role="img" aria-labelledby="diff-title diff-desc">
+            <title id="diff-title">Goal differential by team</title>
+            <desc id="diff-desc">Brazil plus 129, Germany plus 102, Argentina plus 51, Italy plus 51, France plus 51.</desc>
+            <line x1="70" y1="280" x2="710" y2="280" class="chart-axis"></line>
+            <g>
+              <line x1="122" y1="280" x2="122" y2="28"></line>
+              <circle cx="122" cy="28" r="18"></circle>
+              <text x="122" y="328">Brazil</text>
+              <text x="122" y="18">+129</text>
+            </g>
+            <g>
+              <line x1="252" y1="280" x2="252" y2="82"></line>
+              <circle cx="252" cy="82" r="18"></circle>
+              <text x="252" y="328">Germany</text>
+              <text x="252" y="72">+102</text>
+            </g>
+            <g>
+              <line x1="382" y1="280" x2="382" y2="180"></line>
+              <circle cx="382" cy="180" r="18"></circle>
+              <text x="382" y="328">Argentina</text>
+              <text x="382" y="170">+51</text>
+            </g>
+            <g>
+              <line x1="512" y1="280" x2="512" y2="180"></line>
+              <circle cx="512" cy="180" r="18"></circle>
+              <text x="512" y="328">Italy</text>
+              <text x="512" y="170">+51</text>
+            </g>
+            <g>
+              <line x1="642" y1="280" x2="642" y2="180"></line>
+              <circle cx="642" cy="180" r="18"></circle>
+              <text x="642" y="328">France</text>
+              <text x="642" y="170">+51</text>
+            </g>
+          </svg>
+        </section>
+
+        <section class="chart-module chart-animate">
+          <div class="chart-copy">
+            <p class="block-label">Paired Bars</p>
+            <h3>Goals scored versus conceded</h3>
+            <p>This treatment is useful when the story depends on the distance between two related values.</p>
+          </div>
+
+          <svg class="svg-chart paired-chart" viewBox="0 0 760 420" role="img" aria-labelledby="goals-title goals-desc">
+            <title id="goals-title">Goals scored and conceded by team</title>
+            <desc id="goals-desc">A paired bar comparison for Brazil, Germany, Argentina, Italy, and France.</desc>
+            <g class="paired-legend">
+              <rect x="210" y="18" width="18" height="18" class="scored"></rect>
+              <text x="238" y="34">Goals scored</text>
+              <rect x="420" y="18" width="18" height="18" class="conceded"></rect>
+              <text x="448" y="34">Goals conceded</text>
+            </g>
+            <g class="paired-row">
+              <text x="0" y="88">Brazil</text>
+              <rect x="210" y="58" width="500" height="24" class="scored"></rect>
+              <rect x="210" y="88" width="228" height="24" class="conceded"></rect>
+            </g>
+            <g class="paired-row">
+              <text x="0" y="156">Germany</text>
+              <rect x="210" y="126" width="489" height="24" class="scored"></rect>
+              <rect x="210" y="156" width="274" height="24" class="conceded"></rect>
+            </g>
+            <g class="paired-row">
+              <text x="0" y="224">Argentina</text>
+              <rect x="210" y="194" width="321" height="24" class="scored"></rect>
+              <rect x="210" y="224" width="213" height="24" class="conceded"></rect>
+            </g>
+            <g class="paired-row">
+              <text x="0" y="292">Italy</text>
+              <rect x="210" y="262" width="270" height="24" class="scored"></rect>
+              <rect x="210" y="292" width="162" height="24" class="conceded"></rect>
+            </g>
+            <g class="paired-row">
+              <text x="0" y="360">France</text>
+              <rect x="210" y="330" width="287" height="24" class="scored"></rect>
+              <rect x="210" y="360" width="179" height="24" class="conceded"></rect>
+            </g>
+          </svg>
+        </section>
+
+        <section class="chart-module">
+          <div class="chart-copy">
+            <p class="block-label">Data Table</p>
+            <h3>Source values</h3>
+          </div>
+
+          <div class="chart-table-wrap">
+            <table class="chart-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Team</th>
+                  <th>Matches</th>
+                  <th>Wins</th>
+                  <th>Goals Scored</th>
+                  <th>Goals Conceded</th>
+                  <th>Goal Diff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Brazil</td>
+                  <td>114</td>
+                  <td>76</td>
+                  <td>237</td>
+                  <td>108</td>
+                  <td>+129</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Germany</td>
+                  <td>112</td>
+                  <td>68</td>
+                  <td>232</td>
+                  <td>130</td>
+                  <td>+102</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Argentina</td>
+                  <td>88</td>
+                  <td>47</td>
+                  <td>152</td>
+                  <td>101</td>
+                  <td>+51</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Italy</td>
+                  <td>83</td>
+                  <td>45</td>
+                  <td>128</td>
+                  <td>77</td>
+                  <td>+51</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>France</td>
+                  <td>73</td>
+                  <td>39</td>
+                  <td>136</td>
+                  <td>85</td>
+                  <td>+51</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>EXHB.01 Chart Showcase</p>
+    <a href="index.html">Back to Home</a>
+  </footer>
+</body>
+</html>

@@ -58,3 +58,45 @@ if (mobileHeaderQuery.addEventListener) {
   mobileHeaderQuery.addListener(updateHeaderVisibility);
 }
 updateHeaderVisibility();
+
+const animatedCharts = document.querySelectorAll(".chart-animate");
+
+if (animatedCharts.length > 0) {
+  function revealVisibleCharts() {
+    animatedCharts.forEach((chart) => {
+      const chartTop = chart.getBoundingClientRect().top;
+      const triggerPoint = window.innerHeight * 0.85;
+
+      if (chartTop < triggerPoint) {
+        chart.classList.add("is-visible");
+      }
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    const chartObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -20% 0px", threshold: 0.01 }
+    );
+
+    animatedCharts.forEach((chart) => chartObserver.observe(chart));
+  }
+
+  window.addEventListener("scroll", revealVisibleCharts, { passive: true });
+  window.addEventListener("resize", revealVisibleCharts);
+  const chartRevealTimer = window.setInterval(() => {
+    revealVisibleCharts();
+
+    if (document.querySelectorAll(".chart-animate:not(.is-visible)").length === 0) {
+      window.clearInterval(chartRevealTimer);
+    }
+  }, 250);
+  revealVisibleCharts();
+}
